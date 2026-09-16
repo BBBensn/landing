@@ -55,6 +55,24 @@
   .card-pdf .card-domain    { color: #ff0051; }
   .card-pdf .card-arrow svg { stroke: #ff0051; }
 
+  /* tracking — Lime Pulse #a3e635 */
+  .card-tracking::before         { background: radial-gradient(circle at top right, rgba(163,230,53,0.10) 0%, transparent 60%); }
+  .card-tracking .card-icon      { background: rgba(163,230,53,0.10); border: 1px solid rgba(163,230,53,0.2); }
+  .card-tracking .card-domain    { color: #a3e635; }
+  .card-tracking .card-arrow svg { stroke: #a3e635; }
+
+  /* library — Teal Tide #2dd4bf */
+  .card-library::before         { background: radial-gradient(circle at top right, rgba(45,212,191,0.10) 0%, transparent 60%); }
+  .card-library .card-icon      { background: rgba(45,212,191,0.10); border: 1px solid rgba(45,212,191,0.2); }
+  .card-library .card-domain    { color: #2dd4bf; }
+  .card-library .card-arrow svg { stroke: #2dd4bf; }
+
+  /* stream — Jellyfin Purple #aa5cc3 */
+  .card-stream::before         { background: radial-gradient(circle at top right, rgba(170,92,195,0.12) 0%, transparent 60%); }
+  .card-stream .card-icon      { background: rgba(170,92,195,0.12); border: 1px solid rgba(170,92,195,0.2); }
+  .card-stream .card-domain    { color: #aa5cc3; }
+  .card-stream .card-arrow svg { stroke: #aa5cc3; }
+
   .app-nav {
     display: flex;
     align-items: center;
@@ -187,8 +205,58 @@
       </div>
     </a>
 
+    <!-- tracking.bensn.me — Lime Pulse -->
+    <a class="card card-tracking intro-fade" href="https://tracking.bensn.me" target="_blank" rel="noopener" style="animation-delay:0.43s">
+      <div class="card-arrow"><svg viewBox="0 0 14 14" fill="none" stroke-width="1.5"><path d="M2 12L12 2M12 2H5M12 2V9"/></svg></div>
+      <div class="card-inner">
+        <div class="card-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M3 15V9M8 15V5M13 15v-7M17 15v-3" stroke="#a3e635" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="card-domain">tracking.bensn.me</div>
+        <div class="card-name">Tracking</div>
+        <div class="card-desc">Habits, Konsum, Zähler — konfigurierbarer Tracker.</div>
+        <div class="tag">Flask · Port 5001</div>
+      </div>
+    </a>
+
+    <!-- library.bensn.me — Teal Tide -->
+    <a class="card card-library intro-fade" href="https://library.bensn.me" target="_blank" rel="noopener" style="animation-delay:0.50s">
+      <div class="card-arrow"><svg viewBox="0 0 14 14" fill="none" stroke-width="1.5"><path d="M2 12L12 2M12 2H5M12 2V9"/></svg></div>
+      <div class="card-inner">
+        <div class="card-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 3h5a2 2 0 012 2v12a2 2 0 00-2-2H4V3z" stroke="#2dd4bf" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M16 3h-5a2 2 0 00-2 2v12a2 2 0 012-2h5V3z" stroke="#2dd4bf" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="card-domain">library.bensn.me</div>
+        <div class="card-name">Library</div>
+        <div class="card-desc">Wunschliste & Bestandsübersicht für die Mediathek.</div>
+        <div class="tag">Flask · Port 5006</div>
+      </div>
+    </a>
+
+    <!-- stream.bensn.me — Jellyfin Purple -->
+    <a class="card card-stream intro-fade" href="https://stream.bensn.me" target="_blank" rel="noopener" style="animation-delay:0.57s">
+      <div class="card-arrow"><svg viewBox="0 0 14 14" fill="none" stroke-width="1.5"><path d="M2 12L12 2M12 2H5M12 2V9"/></svg></div>
+      <div class="card-inner">
+        <div class="card-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="8" stroke="#aa5cc3" stroke-width="1.5"/>
+            <path d="M8 7l5 3-5 3V7z" fill="#aa5cc3"/>
+          </svg>
+        </div>
+        <div class="card-domain">stream.bensn.me</div>
+        <div class="card-name">Jellyfin</div>
+        <div class="card-desc">Mediathek für Filme & Serien.</div>
+        <div class="tag">Jellyfin · Docker</div>
+      </div>
+    </a>
+
     <!-- data.bensn.me — Fresh Sky -->
-    <a class="card card-data intro-fade" href="https://data.bensn.me" target="_blank" rel="noopener" style="animation-delay:0.43s">
+    <a class="card card-data intro-fade" href="https://data.bensn.me" target="_blank" rel="noopener" style="animation-delay:0.64s">
       <div class="card-arrow"><svg viewBox="0 0 14 14" fill="none" stroke-width="1.5"><path d="M2 12L12 2M12 2H5M12 2V9"/></svg></div>
       <div class="card-inner">
         <div class="card-icon">
@@ -205,7 +273,7 @@
     </a>
 
     <!-- pdf.bensn.me — Hot Fuchsia -->
-    <a class="card card-pdf intro-fade" href="https://pdf.bensn.me" target="_blank" rel="noopener" style="animation-delay:0.50s">
+    <a class="card card-pdf intro-fade" href="https://pdf.bensn.me" target="_blank" rel="noopener" style="animation-delay:0.71s">
       <div class="card-arrow"><svg viewBox="0 0 14 14" fill="none" stroke-width="1.5"><path d="M2 12L12 2M12 2H5M12 2V9"/></svg></div>
       <div class="card-inner">
         <div class="card-icon">

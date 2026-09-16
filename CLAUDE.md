@@ -9,7 +9,7 @@ Ablageort: `~/Documents/Coding/bensn-hub/landing/CLAUDE.md`
 
 - **Name:** landing
 - **Domain:** bensn.me
-- **Version:** v1.3.0
+- **Version:** v1.4.0
 - **Status:** active
 - **Stack:** Vanilla HTML + CSS + JS (reines Static-Frontend, kein Backend)
 
@@ -57,7 +57,8 @@ scp ~/Documents/Coding/bensn-hub/landing/index.html bensn:/var/www/bensn.me/inde
 ```
 
 Kein Service-Restart nötig (statisch). Shared Assets (`bensn.css`, `bensn.js`) werden
-aus dem `bensn-meta`-Repo deployed (`bensn-meta/snapshots/.../shared/`).
+aus `bensn-meta/shared/` deployed (siehe dortiges CLAUDE.md) — NICHT aus
+`bensn-meta/snapshots/.../shared/`, das ist ein veralteter Archiv-Stand von April.
 
 ---
 
@@ -81,7 +82,10 @@ aus dem `bensn-meta`-Repo deployed (`bensn-meta/snapshots/.../shared/`).
 - Service-Cards zeigen: Domain, Name, Beschreibung, Tech-Tag (z.B. `Flask · Port 5001`)
 - Farben der Cards sind pro Service definiert (CSS-Klassen `card-feed`, `card-wt`, etc.)
 - Animationen: `intro-fade` mit gestaffelten `animation-delay`-Werten
-- Neue Services bekommen eine Card, sobald sie live sind (z.B. demnächst `health.bensn.me`)
+- Neue Services bekommen eine Card, sobald sie live sind
+- Auch Nebenprojekte auf demselben Server (z.B. `library.bensn.me`, `stream.bensn.me`)
+  bekommen eine Card — die Landing-Page ist ein Verzeichnis von allem, was läuft, nicht nur
+  von den Kern-Tracking-Apps
 
 ---
 
@@ -91,7 +95,7 @@ aus dem `bensn-meta`-Repo deployed (`bensn-meta/snapshots/.../shared/`).
 |---------|---------|--------|
 | v1.0.0–v1.2.4 | Frühe Iterationen | ✅ deployed |
 | v1.3.0 | 6 Service-Cards, Meta-Footer, shared assets | ✅ deployed |
-| — | Card für `health.bensn.me` ergänzen, sobald live | ⬜ geplant |
+| v1.4.0 | Karten für `tracking.bensn.me`, `library.bensn.me`, `stream.bensn.me` ergänzt (fehlten trotz aktivem Betrieb) | ✅ deployed (2026-09-16) |
 
 Details zur vollständigen Versionshistorie: `docs/changelogs/CHANGELOG.md`.
 
